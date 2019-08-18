@@ -48,17 +48,6 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yme-0f-6Xt">
-                                <rect key="frame" x="52" y="660" width="310" height="28"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
-                                <state key="normal" title="Back to login">
-                                    <color key="titleColor" red="1" green="0.99605193219999999" blue="0.98679479000000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" red="0.273712185" green="0.51139979329999996" blue="0.90087642769999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="goBackLoginAction:" destination="DHk-7H-D1M" eventType="touchUpInside" id="1yw-a1-2FK"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HD8-7i-gPb">
                                 <rect key="frame" x="165" y="619" width="84" height="41"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -84,6 +73,18 @@
                                 <color key="textColor" red="0.90524059290000003" green="0.96708313670000001" blue="0.63365019680000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yme-0f-6Xt">
+                                <rect key="frame" x="10" y="88" width="148" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <state key="normal" title="&lt;Back to login">
+                                    <color key="titleColor" red="1" green="0.99605193219999999" blue="0.98679479000000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.273712185" green="0.51139979329999996" blue="0.90087642769999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="goBackLoginAction:" destination="DHk-7H-D1M" eventType="touchUpInside" id="1yw-a1-2FK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -95,7 +96,6 @@
                             <constraint firstItem="IGm-Oa-NQ5" firstAttribute="top" secondItem="FZg-IS-Fbg" secondAttribute="bottom" constant="80" id="7NK-Dj-Exd"/>
                             <constraint firstItem="jBt-UO-6oh" firstAttribute="leading" secondItem="q1T-os-jaT" secondAttribute="leading" constant="52" id="8lp-Lv-gwe"/>
                             <constraint firstItem="nib-OK-1ww" firstAttribute="centerX" secondItem="f1u-Jg-LQt" secondAttribute="centerX" id="LHg-Vf-5ZY"/>
-                            <constraint firstItem="q1T-os-jaT" firstAttribute="trailing" secondItem="yme-0f-6Xt" secondAttribute="trailing" constant="52" id="LTP-L2-oVS"/>
                             <constraint firstItem="nib-OK-1ww" firstAttribute="top" secondItem="FZg-IS-Fbg" secondAttribute="bottom" constant="14" id="LZL-IK-BlB"/>
                             <constraint firstItem="ZMX-oS-qsF" firstAttribute="leading" secondItem="q1T-os-jaT" secondAttribute="leading" constant="52" id="LdX-G0-sGf"/>
                             <constraint firstItem="q1T-os-jaT" firstAttribute="trailing" secondItem="cFe-v8-ylH" secondAttribute="trailing" constant="52" id="LlA-5k-XFE"/>
@@ -104,14 +104,11 @@
                             <constraint firstItem="cFe-v8-ylH" firstAttribute="leading" secondItem="q1T-os-jaT" secondAttribute="leading" constant="52" id="SkT-Q7-kfV"/>
                             <constraint firstItem="ZMX-oS-qsF" firstAttribute="top" secondItem="cFe-v8-ylH" secondAttribute="bottom" constant="29" id="Tx6-I6-1j1"/>
                             <constraint firstItem="cFe-v8-ylH" firstAttribute="top" secondItem="IGm-Oa-NQ5" secondAttribute="bottom" constant="29" id="UOY-ab-qsb"/>
-                            <constraint firstItem="yme-0f-6Xt" firstAttribute="centerX" secondItem="f1u-Jg-LQt" secondAttribute="centerX" id="Xoz-Ze-YDw"/>
                             <constraint firstItem="jBt-UO-6oh" firstAttribute="top" secondItem="ZMX-oS-qsF" secondAttribute="bottom" constant="29" id="dAk-1S-OnW"/>
                             <constraint firstItem="nib-OK-1ww" firstAttribute="leading" secondItem="q1T-os-jaT" secondAttribute="leading" constant="52" id="fqp-oO-F9Y"/>
                             <constraint firstItem="IGm-Oa-NQ5" firstAttribute="leading" secondItem="q1T-os-jaT" secondAttribute="leading" constant="52" id="gNQ-f8-3yf"/>
                             <constraint firstItem="FZg-IS-Fbg" firstAttribute="centerX" secondItem="f1u-Jg-LQt" secondAttribute="centerX" id="jZQ-iW-tKp"/>
                             <constraint firstItem="q1T-os-jaT" firstAttribute="trailing" secondItem="nib-OK-1ww" secondAttribute="trailing" constant="52" id="sFy-tS-0WE"/>
-                            <constraint firstItem="yme-0f-6Xt" firstAttribute="leading" secondItem="q1T-os-jaT" secondAttribute="leading" constant="52" id="uIa-vd-yj2"/>
-                            <constraint firstItem="yme-0f-6Xt" firstAttribute="top" secondItem="HD8-7i-gPb" secondAttribute="bottom" id="waz-ND-Nj0"/>
                             <constraint firstItem="FZg-IS-Fbg" firstAttribute="top" secondItem="q1T-os-jaT" secondAttribute="top" constant="159" id="y1O-bs-zwd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="q1T-os-jaT"/>

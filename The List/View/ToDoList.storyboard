@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--ToDo List-->
+        <!--Grocery List-->
         <scene sceneID="eOf-F4-rah">
             <objects>
                 <viewController storyboardIdentifier="ToDoListId" id="zNh-25-F8C" customClass="ToDoListViewController" customModule="The_List" customModuleProvider="target" sceneMemberID="viewController">
@@ -53,7 +53,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1Ed-Y9-48v"/>
                     </view>
-                    <navigationItem key="navigationItem" title="ToDo List" id="O59-R1-qcd">
+                    <navigationItem key="navigationItem" title="Grocery List" id="O59-R1-qcd">
                         <barButtonItem key="backBarButtonItem" title="Back" id="GbR-iV-q34"/>
                         <barButtonItem key="leftBarButtonItem" image="menu" id="atf-iq-5ne">
                             <color key="tintColor" red="0.89412146810000004" green="0.89412027599999999" blue="0.92647093530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

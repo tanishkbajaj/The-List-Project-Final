@@ -83,4 +83,9 @@ extension ViewController {
         let controller = self.route.routeToMainScreen() // Router configuration completed and ready to route
         self.navigationController?.pushViewController(controller, animated: true)
     }
+    //disappear the keyboard
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
+    {
+        self.view.endEditing(true)
+    }
 }
