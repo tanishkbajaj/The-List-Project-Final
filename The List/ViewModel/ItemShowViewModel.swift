@@ -90,12 +90,13 @@ extension ItemShowViewModel {
                 itemsArray.insert(item, at: 0) // Insert inside the final array
             }
         }
+        //Removed this code so that user cannot see items in completed list by category
         // Search the Complete task Array
-        for item in service.completedTaskArray {
-            if item.category == category { // Category Matched
-                itemsArray.insert(item, at: 0)
-            }
-        }
+//        for item in service.completedTaskArray {
+//            if item.category == category { // Category Matched
+//                itemsArray.insert(item, at: 0)
+//            }
+//        }
         return itemsArray
     }
     
