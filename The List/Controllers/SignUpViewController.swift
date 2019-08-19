@@ -55,4 +55,9 @@ extension SignUpViewController{
         let controller = route.routeToMainScreen()
         self.navigationController?.pushViewController(controller, animated: true)
     }
+    //disappear the keyboard
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
+    {
+        self.view.endEditing(true)
+    }
 }

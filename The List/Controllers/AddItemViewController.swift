@@ -81,5 +81,10 @@ extension AddItemViewController{
     private func renderDropDownForFriendEmailList(dropDownRef: DropDown, valueArray: [String]){
         dropDownRef.optionArray = valueArray
     }
+    //disappear the keyboard
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
+    {
+        self.view.endEditing(true)
+    }
     
 }
