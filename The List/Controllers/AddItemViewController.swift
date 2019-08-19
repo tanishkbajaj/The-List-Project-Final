@@ -71,8 +71,9 @@ extension AddItemViewController{
             valueArray1.append(i)
         }
         print(valueArray1)
+        let removedDuplicatesArray = removeDuplicates(array: valueArray1)
         //valueArray1 = valueArray
-        dropDownRef.optionArray = valueArray1
+        dropDownRef.optionArray = removedDuplicatesArray
         
         
         
@@ -80,6 +81,23 @@ extension AddItemViewController{
     
     private func renderDropDownForFriendEmailList(dropDownRef: DropDown, valueArray: [String]){
         dropDownRef.optionArray = valueArray
+    }
+    
+    func removeDuplicates(array: [String]) -> [String] {
+        var encountered = Set<String>()
+        var result: [String] = []
+        for value in array {
+            if encountered.contains(value) {
+                // Do not add a duplicate element.
+            }
+            else {
+                // Add value to the set.
+                encountered.insert(value)
+                // ... Append the value.
+                result.append(value)
+            }
+        }
+        return result
     }
     
 }
