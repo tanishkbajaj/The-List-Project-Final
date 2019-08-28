@@ -16,6 +16,9 @@
 		49079EE622361C57000DD3EF /* CategoryItems.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49079EE522361C57000DD3EF /* CategoryItems.storyboard */; };
 		49079EE822361C75000DD3EF /* CategoryItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49079EE722361C75000DD3EF /* CategoryItemsViewController.swift */; };
 		492E38312308F516006C0B15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 492E38302308F516006C0B15 /* Main.storyboard */; };
+		492E3861230BC2DD006C0B15 /* giphy.gif in Resources */ = {isa = PBXBuildFile; fileRef = 492E3860230BC2DB006C0B15 /* giphy.gif */; };
+		492E3863230BC61C006C0B15 /* backgroundveggies.png in Resources */ = {isa = PBXBuildFile; fileRef = 492E3862230BC61A006C0B15 /* backgroundveggies.png */; };
+		49387375231639950021491C /* error.png in Resources */ = {isa = PBXBuildFile; fileRef = 49387374231639940021491C /* error.png */; };
 		498F0010222BA8BA003E7353 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498F000F222BA8BA003E7353 /* UserModel.swift */; };
 		498F0013222BAA79003E7353 /* UserAuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498F0012222BAA79003E7353 /* UserAuthenticationViewModel.swift */; };
 		498F0015222C7DA0003E7353 /* DatabaseReferenceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498F0014222C7DA0003E7353 /* DatabaseReferenceModel.swift */; };
@@ -56,6 +59,9 @@
 		49079EE522361C57000DD3EF /* CategoryItems.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CategoryItems.storyboard; sourceTree = "<group>"; };
 		49079EE722361C75000DD3EF /* CategoryItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemsViewController.swift; sourceTree = "<group>"; };
 		492E38302308F516006C0B15 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		492E3860230BC2DB006C0B15 /* giphy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = giphy.gif; sourceTree = "<group>"; };
+		492E3862230BC61A006C0B15 /* backgroundveggies.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundveggies.png; sourceTree = "<group>"; };
+		49387374231639940021491C /* error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = error.png; sourceTree = "<group>"; };
 		498F000F222BA8BA003E7353 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		498F0012222BAA79003E7353 /* UserAuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthenticationViewModel.swift; sourceTree = "<group>"; };
 		498F0014222C7DA0003E7353 /* DatabaseReferenceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseReferenceModel.swift; sourceTree = "<group>"; };
@@ -225,8 +231,11 @@
 				498F000C222BA853003E7353 /* Controllers */,
 				FB2088A622279C180026A15F /* AppDelegate.swift */,
 				FB2088AD22279C1D0026A15F /* Assets.xcassets */,
+				49387374231639940021491C /* error.png */,
 				FB2088B222279C1D0026A15F /* Info.plist */,
 				FB2088D622288B520026A15F /* GoogleService-Info.plist */,
+				492E3862230BC61A006C0B15 /* backgroundveggies.png */,
+				492E3860230BC2DB006C0B15 /* giphy.gif */,
 				49BFFFA322319CF800068FC6 /* Service.swift */,
 			);
 			path = "The List";
@@ -293,14 +302,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				425A16A2222EF5A500884ABB /* CompletedList.storyboard in Resources */,
+				492E3861230BC2DD006C0B15 /* giphy.gif in Resources */,
 				498F001B222CBA80003E7353 /* ToDoList.storyboard in Resources */,
 				FB2088B122279C1D0026A15F /* LaunchScreen.storyboard in Resources */,
 				492E38312308F516006C0B15 /* Main.storyboard in Resources */,
 				49079EE622361C57000DD3EF /* CategoryItems.storyboard in Resources */,
+				492E3863230BC61C006C0B15 /* backgroundveggies.png in Resources */,
 				FB2088D722288B520026A15F /* GoogleService-Info.plist in Resources */,
 				FB2088AE22279C1D0026A15F /* Assets.xcassets in Resources */,
 				49DEC2E62233A59400C2CD78 /* ItemCellTableViewCell.xib in Resources */,
 				425A16AA222EFD9600884ABB /* Friends.storyboard in Resources */,
+				49387375231639950021491C /* error.png in Resources */,
 				498F0017222CB2CF003E7353 /* SignUp.storyboard in Resources */,
 				425A16A6222EF8A900884ABB /* Catagories.storyboard in Resources */,
 				498F0027222E3BB1003E7353 /* ItemAddScreen.storyboard in Resources */,

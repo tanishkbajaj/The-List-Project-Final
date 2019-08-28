@@ -12,8 +12,8 @@ extension UIViewController {
     
     // Add a blurry effect to image
     func addBlurEffect(backgroundImage: UIImageView){
-        let darkBlur = UIBlurEffect(style: UIBlurEffect.Style.dark)
-        let blurView = UIVisualEffectView(effect: darkBlur)
+        let lightBlur = UIBlurEffect(style: UIBlurEffect.Style.light)
+        let blurView = UIVisualEffectView(effect: lightBlur)
         let imageFrame = backgroundImage.bounds // Background Image Frame
         blurView.frame = CGRect(x: 0.0, y: 0.0, width: imageFrame.width, height: imageFrame.height + 100.0)
         backgroundImage.addSubview(blurView)
@@ -30,9 +30,9 @@ extension UIViewController {
     
     // Add a Background Image to the view Screen
     func addBackgroundImage(){
-        let imageView = UIImageView(image: UIImage(named: "loginBackground")) // Image View Holder
+        let imageView = UIImageView(image: UIImage(named: "backgroundveggies")) // Image View Holder
         imageView.frame = view.bounds // Image Size
         view.insertSubview(imageView, at: 0) // Insert at the lower stack of image
-        addBlurEffect(backgroundImage: imageView)
+        //addBlurEffect(backgroundImage: imageView)
     }
 }

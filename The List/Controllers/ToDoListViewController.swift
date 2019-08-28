@@ -18,7 +18,7 @@ class ToDoListViewController: UIViewController, UITabBarDelegate  {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        addBackgroundImage() // Added Background Image
+       // addBackgroundImage() // Added Background Image
         showNavigationBar()
         NotificationCenter.default.addObserver(self, selector: #selector(ToDoListViewController.handleAddItemDismiss), name: NSNotification.Name(rawValue: "addItemIsDismissed"), object: nil)
         let nibName = UINib(nibName: "ItemCellTableViewCell", bundle: nil)
@@ -33,7 +33,7 @@ class ToDoListViewController: UIViewController, UITabBarDelegate  {
     }
     
     func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
-        addBackgroundImage() 
+       // addBackgroundImage() 
         switch item.title! {
         case "Sign Off": // Log Off The User
             print("signOFF Here")

@@ -19,7 +19,7 @@ class CategoryItemsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        addBackgroundImage()
+       // addBackgroundImage()
         self.title = category   //set title
         categoryItemsArray = itemShowViewModel.getItemsByCategory(category: category) // Store the category item in array. Contains completed and not completed task
         let nibname = UINib(nibName: "ItemCellTableViewCell", bundle: nil)
