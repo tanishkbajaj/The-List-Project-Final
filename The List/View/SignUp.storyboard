@@ -73,18 +73,6 @@
                                 <color key="textColor" red="0.90524059290000003" green="0.96708313670000001" blue="0.63365019680000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yme-0f-6Xt">
-                                <rect key="frame" x="10" y="88" width="148" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
-                                <state key="normal" title="&lt;Back to login">
-                                    <color key="titleColor" red="1" green="0.99605193219999999" blue="0.98679479000000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" red="0.273712185" green="0.51139979329999996" blue="0.90087642769999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="goBackLoginAction:" destination="DHk-7H-D1M" eventType="touchUpInside" id="1yw-a1-2FK"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -113,7 +101,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="q1T-os-jaT"/>
                     </view>
-                    <navigationItem key="navigationItem" id="akf-gD-R4M"/>
+                    <navigationItem key="navigationItem" id="akf-gD-R4M">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="LOc-eL-zo2">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="backToLogin:" destination="DHk-7H-D1M" id="He8-St-6wS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="emailText" destination="ZMX-oS-qsF" id="7Il-xZ-pLt"/>
                         <outlet property="errorMessageText" destination="nib-OK-1ww" id="xye-Io-t28"/>

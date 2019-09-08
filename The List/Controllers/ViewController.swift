@@ -30,6 +30,9 @@ class ViewController: UIViewController {
             userAuthenticate!.signinUserAutomatic(classReference: self) // Signin user automatically
         }
     }
+    override func viewWillAppear(_ animated: Bool) {
+        hideNavigationBar()
+    }
     
     @IBAction func signInAction(_ sender: Any) {
         let email: String = emailText.text!

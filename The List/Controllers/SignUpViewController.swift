@@ -23,7 +23,8 @@ class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         addBackgroundImage() // Background Image
-        hideNavigationBar()  // Hide Navigation Bar
+       // shNavigationBar()  // Hide Navigation Bar
+        showNavigationBar()
     }
     
     @IBAction func signUpAction(_ sender: Any) {
@@ -36,9 +37,16 @@ class SignUpViewController: UIViewController {
         userAuthenticateViewModel?.signUp(classRefernce: self, email: email, password: password, firstname: firstName, lastname: lastName) // User Signup Process
     }
     
-    @IBAction func goBackLoginAction(_ sender: Any) {
+    
+    @IBAction func backToLogin(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
+    
+    
+    
+//    @IBAction func goBackLoginAction(_ sender: Any) {
+//        self.navigationController?.popViewController(animated: true)
+//    }
 }
 
 // UserAuthenticationViewModel Callback functions
